@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "MTF APIs",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -11,69 +11,147 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
         "tab": "API Reference",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "LoanManagement",
             "pages": [
-              "api-reference/introduction"
+              "api-reference/LMS/loanmanagement/get-v1loan-managementhealth"
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "Loan",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "api-reference/LMS/loan/post-v1loan-managementloansschedule-previews",
+              "api-reference/LMS/loan/post-v1loan-managementloansschedule-preview",
+              "api-reference/LMS/loan/get-v1loan-managementloansinterest-report",
+              "api-reference/LMS/loan/get-v1loan-managementloanscof-report",
+              "api-reference/LMS/loan/get-v1loan-managementloans",
+              "api-reference/LMS/loan/post-v1loan-managementloans",
+              "api-reference/LMS/loan/get-v1loan-managementloans-1",
+              "api-reference/LMS/loan/patch-v1loan-managementloans",
+              "api-reference/LMS/loan/get-v1loan-managementloans-transactions",
+              "api-reference/LMS/loan/post-v1loan-managementloans-transactions-credit",
+              "api-reference/LMS/loan/get-v1loan-managementloans-installments",
+              "api-reference/LMS/loan/get-v1loan-managementloans-preview-settlement-quotes",
+              "api-reference/LMS/loan/retrieve-the-settlement-quote-saved-to-a-specific-loan-account",
+              "api-reference/LMS/loan/save-the-loan-settlement-quote-for-a-specific-payoff-date-to-a-loan-account",
+              "api-reference/LMS/loan/post-v1loan-managementloanscost-of-funds",
+              "api-reference/LMS/loan/get-v1loan-managementloanssummaries",
+              "api-reference/LMS/loan/post-v1loan-managementloanssend-summaries",
+              "api-reference/LMS/loan/get-v1loan-managementloans-summary",
+              "api-reference/LMS/loan/get-v1loan-managementloans-disburse",
+              "api-reference/LMS/loan/post-v1loan-managementloans-disburse",
+              "api-reference/LMS/loan/post-v1loan-managementloans-disburse-1",
+              "api-reference/LMS/loan/patch-v1loan-managementloans-disburse",
+              "api-reference/LMS/loan/get-v1loan-managementloansevents",
+              "api-reference/LMS/loan/get-v1loan-managementloanseod",
+              "api-reference/LMS/loan/used-for-allocation-payment-against-a-loan-account",
+              "api-reference/LMS/loan/post-v1loan-managementloans-reschedule",
+              "api-reference/LMS/loan/retrieve-the-loan-state-transition-jobs-for-a-specific-loan-account",
+              "api-reference/LMS/loan/check-if-a-loan-can-be-cancelled"
+            ]
+          },
+          {
+            "group": "LoanConfig",
+            "pages": [
+              "api-reference/LMS/loanconfig/get-v1loan-managementconfigurationloan-products",
+              "api-reference/LMS/loanconfig/put-v1loan-managementconfigurationloan-products",
+              "api-reference/LMS/loanconfig/get-v1loan-managementconfigurationcustom-fields",
+              "api-reference/LMS/loanconfig/put-v1loan-managementconfigurationcustom-fields",
+              "api-reference/LMS/loanconfig/get-v1loan-managementconfigurationclient-roles",
+              "api-reference/LMS/loanconfig/put-v1loan-managementconfigurationclient-roles"
+            ]
+          },
+          {
+            "group": "Product",
+            "pages": [
+              "api-reference/LMS/product/get-v1loan-managementloan-products",
+              "api-reference/LMS/product/get-v1loan-managementloan-products-1"
+            ]
+          },
+          {
+            "group": "PaymentWaiver",
+            "pages": [
+              "api-reference/LMS/paymentwaiver/post-v1loan-managementpayment-waivers-calculate-premium",
+              "api-reference/LMS/paymentwaiver/post-v1loan-managementpayment-waiverscalculate-premiums",
+              "api-reference/LMS/paymentwaiver/post-v1loan-managementpayment-waiverscalculate-rebate"
+            ]
+          },
+          {
+            "group": "PaymentWaiverConfiguration",
+            "pages": [
+              "api-reference/LMS/paymentwaiverconfiguration/get-v1loan-managementconfigurationloan-products-payment-waivers",
+              "api-reference/LMS/paymentwaiverconfiguration/post-v1loan-managementconfigurationloan-products-payment-waivers",
+              "api-reference/LMS/paymentwaiverconfiguration/get-v1loan-managementconfigurationloan-products-payment-waivers-1",
+              "api-reference/LMS/paymentwaiverconfiguration/delete-v1loan-managementconfigurationloan-products-payment-waivers",
+              "api-reference/LMS/paymentwaiverconfiguration/patch-v1loan-managementconfigurationloan-products-payment-waivers"
+            ]
+          },
+          {
+            "group": "FeeConfiguration",
+            "pages": [
+              "api-reference/LMS/feeconfiguration/get-v1loan-managementconfigurationloan-products-fees",
+              "api-reference/LMS/feeconfiguration/post-v1loan-managementconfigurationloan-products-fees",
+              "api-reference/LMS/feeconfiguration/get-v1loan-managementconfigurationloan-products-fees-1",
+              "api-reference/LMS/feeconfiguration/delete-v1loan-managementconfigurationloan-products-fees",
+              "api-reference/LMS/feeconfiguration/patch-v1loan-managementconfigurationloan-products-fees",
+              "api-reference/LMS/feeconfiguration/get-v1loan-managementconfigurationloan-products-entities-fees"
+            ]
+          },
+          {
+            "group": "Payment",
+            "pages": [
+              "api-reference/LMS/payment/post-v1loan-managementpaymentsprocess-repayments"
+            ]
+          },
+          {
+            "group": "RepaymentRetry",
+            "pages": [
+              "api-reference/LMS/repaymentretry/get-v1loan-managementconfigurationrepayment-retry",
+              "api-reference/LMS/repaymentretry/post-v1loan-managementconfigurationrepayment-retry",
+              "api-reference/LMS/repaymentretry/get-v1loan-managementconfigurationrepayment-retry-1",
+              "api-reference/LMS/repaymentretry/delete-v1loan-managementconfigurationrepayment-retry",
+              "api-reference/LMS/repaymentretry/patch-v1loan-managementconfigurationrepayment-retry"
+            ]
+          },
+          {
+            "group": "EventStream",
+            "pages": [
+              "api-reference/LMS/eventstream/post-v1loan-managementeventsubscriptions",
+              "api-reference/LMS/eventstream/get-v1loan-managementeventsubscriptions"
+            ]
+          },
+          {
+            "group": "Jobs",
+            "pages": [
+              "api-reference/LMS/jobs/get-v1loan-managementjobsvalid-jobs",
+              "api-reference/LMS/jobs/get-v1loan-managementjobs",
+              "api-reference/LMS/jobs/post-v1loan-managementjobs",
+              "api-reference/LMS/jobs/get-v1loan-managementjobs-history",
+              "api-reference/LMS/jobs/delete-v1loan-managementjobs",
+              "api-reference/LMS/jobs/patch-v1loan-managementjobs",
+              "api-reference/LMS/jobs/get-v1loan-managementjobs-trigger"
+            ]
+          },
+          {
+            "group": "History Logs",
+            "pages": [
+              "api-reference/LMS/history-logs/get-v1loan-managementhistory-logs"
+            ]
+          },
+          {
+            "group": "Service Bus Events",
+            "pages": [
+              "api-reference/LMS/service-bus-events/get-v1loan-managementservice-bus-events",
+              "api-reference/LMS/service-bus-events/get-v1loan-managementservice-bus-events-1",
+              "api-reference/LMS/service-bus-events/post-v1loan-managementservice-bus-eventsretry",
+              "api-reference/LMS/service-bus-events/post-v1loan-managementservice-bus-eventscurrent-state"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
